@@ -131,21 +131,6 @@ const RecentlyViewedItem = ({ item }: { item: RecentlyViewedItem }) => (
   </motion.div>
 )
 
-const StarIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
-  </svg>
-)
-
 const SearchIcon = () => (
   <svg
     width="16"
@@ -223,7 +208,7 @@ export default function ProjectDashboard() {
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className=" md:min-w-[250px]"></div>
+            <div className=" lg:min-w-[250px]"></div>
             {/* <div className="w-[2px] h-8 bg-muted-foregroun rounded-full" /> */}
             <div className="w-[2px] h-8 bg-muted-foreground/30 rounded-full" />
             <h1 className="text-lg font-medium text-muted-foreground">Project Dashboard</h1>
@@ -231,7 +216,6 @@ export default function ProjectDashboard() {
 
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" className="h-9 w-9 p-0">
-              {/* <StarIcon /> */}
               <BsLightningCharge  className=" font-bold"/>
             </Button>
             <Button variant="ghost" size="sm" className="h-9 w-9 p-0">
