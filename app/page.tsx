@@ -1,13 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MoreHorizontal, Plus, Filter, Clock, Eye, Calendar, FileText, Folder, ChevronDown, Search } from "lucide-react"
+import { MoreHorizontal, Plus, Filter, Clock, Eye, FileText, Folder, ChevronDown, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
-import { DropdownMenu, DropdownMenuSub, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { DropdownMenu,  DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { BsLightningCharge } from "react-icons/bs"
 
 // Types for better type safety
@@ -72,7 +72,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           <div className="flex items-center justify-between mb-6 text-sm text-gray-500">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1">
-                <Calendar className="h-4 w-4" />
+                <Clock className="h-4 w-4" />
                 {project.date}
               </div>
               <div className="flex items-center gap-1">
