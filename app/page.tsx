@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MoreHorizontal, Plus, Filter, Clock, Eye, FileText, Folder, ChevronDown, Search } from "lucide-react"
+import { MoreVertical, Plus, Filter, Clock, Eye, FileText, Folder, ChevronDown, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
@@ -51,21 +51,21 @@ const ProjectCard = ({ project }: { project: Project }) => {
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
       <Card className="bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
         <CardContent className="">
-          <div className="flex justify-between items-start mb-3">
-            <h3 className="font-semibold text-medium text-gray-900">{project.title}</h3>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-gray-400 hover:text-gray-600">
-                  <MoreHorizontal className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>Edit project</DropdownMenuItem>
-                <DropdownMenuItem>Share</DropdownMenuItem>
-                <DropdownMenuItem>Archive</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
+        <div className="flex justify-between items-start mb-3">
+          <h3 className="font-semibold text-medium text-gray-900">{project.title}</h3>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full">
+                <MoreVertical className="h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-48">
+              <DropdownMenuItem className="text-sm">Edit project</DropdownMenuItem>
+              <DropdownMenuItem className="text-sm">Share</DropdownMenuItem>
+              <DropdownMenuItem className="text-sm">Archive</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
 
           <p className="text-gray-500 text-sm mb-4 leading-relaxed">{project.description}</p>
 
