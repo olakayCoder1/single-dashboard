@@ -250,7 +250,7 @@ export default function ProjectDashboard() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="mb-12"
         >
-          <h2 className="text-4xl font-bold text-foreground mb-3">Welcome back, Chinedu.</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3">Welcome back, Chinedu.</h2>
           <p className="text-muted-foreground text-lg">
             Manage your construction documents and collaborate with your team using AI-powered tools.
           </p>
