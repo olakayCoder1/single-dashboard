@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { DropdownMenu, DropdownMenuSub, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { BsLightningCharge } from "react-icons/bs"
 
 // Types for better type safety
 interface Project {
@@ -230,7 +231,8 @@ export default function ProjectDashboard() {
 
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" className="h-9 w-9 p-0">
-              <StarIcon />
+              {/* <StarIcon /> */}
+              <BsLightningCharge  className=" font-bold"/>
             </Button>
             <Button variant="ghost" size="sm" className="h-9 w-9 p-0">
               <SearchIcon />
