@@ -222,7 +222,9 @@ export default function ProjectDashboard() {
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-1 h-8 bg-muted-foreground/30 rounded-full" />
+            <div className=" md:min-w-[250px]"></div>
+            {/* <div className="w-[2px] h-8 bg-muted-foregroun rounded-full" /> */}
+            <div className="w-[2px] h-8 bg-muted-foreground/30 rounded-full" />
             <h1 className="text-lg font-medium text-muted-foreground">Project Dashboard</h1>
           </div>
 
@@ -331,7 +333,7 @@ export default function ProjectDashboard() {
               className="bg-gray-100 rounded-3xl border border-gray-200 overflow-hidden shadow"
             >
               <div className="bg-gray-100 px-4 py-3">
-                <h4 className="font-medium text-sm text-gray-900">Quick stats</h4>
+                <h4 className="font-medium text-lg text-gray-800">Quick stats</h4>
               </div>
               <div className="p-4 rounded-t-3xl  bg-white">
                 {stats.map((stat, index) => (
@@ -355,7 +357,7 @@ export default function ProjectDashboard() {
               className="bg-gray-100 rounded-3xl border border-gray-200 overflow-hidden shadow"
             >
               <div className=" px-4 py-3">
-                <h4 className="font-medium text-xl text-gray-800">Recently viewed</h4>
+                <h4 className="font-medium  text-lg text-gray-800">Recently viewed</h4>
               </div>
               <div className="p-4 rounded-t-3xl  bg-white">
                 {recentlyViewed.map((item, index) => (
